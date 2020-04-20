@@ -1,0 +1,30 @@
+{
+  "name": "module-mail",
+  "version": "1.0.0",
+  "description": "Modulo para enviar correos SD",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standardx | snazzy",
+    "lintfix": "standardx --fix | snazzy",
+    "test": "set DEBUG=module-mail:* && node ./test/test.js"
+  },
+  "author": "Carlos Morales",
+  "license": "MIT",
+  "dependencies": {
+    "btoa": "^1.2.1",
+    "debug": "^4.1.1",
+    "dotenv-flow": "^3.1.0",
+    "mongoose": "^5.9.9",
+    "nodemailer": "^6.4.6"
+  },
+  "devDependencies": {
+    "snazzy": "^8.0.0",
+    "standardx": "^5.0.0"
+  },
+  "eslintConfig": {
+    "extends": "standard",
+    "rules": {
+      "eqeqeq": 0
+    }
+  }
+}
